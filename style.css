@@ -1,0 +1,294 @@
+/* common css */
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+:root{
+  --brand-color: #13C5DD;
+  --text-color: rgb(132, 142, 159);
+  --light-color: #fff;
+  --dark-color: #1D2A4D;
+}
+.container-fluid{
+  width: 100%;
+  /*border: 1px solid green;*/
+}
+.container{ 
+ max-width: 1299px;
+ min-width: 400px;
+ margin: 0px auto;
+ /*border: 1px solid red;*/
+}
+.d-flex{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.flex-25{
+   flex: 1 1 25%;
+   height: 100%;
+}
+.flex-35{
+   flex: 1 1 35%;
+   height: 100%;
+}
+.flex-50{
+   flex: 1 1 50%;
+   height: 100%;
+}
+.flex-65{
+   flex: 1 1 65%;
+   height: 100%;
+}
+.flex-75{
+   flex: 1 1 75%;
+   height: 100%;
+}
+.flex-100{
+   flex: 1 1 100%;
+   height: 100%;
+}
+.py-95{
+  padding: 95px 0px;
+}
+.border{
+  /*border: 1px solid blue;*/
+}
+ul{
+  margin: 0px;
+  padding: 0px;
+}
+ul li{
+  list-style: none;
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+}
+i{
+  display: inline-block;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+/* common css */
+#top-bar{
+  border-bottom: 1px solid rgb(132, 142, 159);
+}
+#top-bar .container{
+  padding: 8px 0px;
+}
+.contact-info ul li a{
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: ;
+  font-family: Roboto, sans-serif ;
+  transition: .3s ease-in;
+  padding: 0px 20px;
+}
+.contact-info ul li a:hover{
+  color: var(--brand-color);
+}
+.contact-info ul li a i{
+  padding-right: 5px;
+}
+.contact-info ul li:first-child{
+  margin-right: 20px;
+}
+.contact-info ul li:first-child::after{
+  content: "|";
+  padding-left: 20px;
+  color: var(--text-color);
+  font-weight: 400;
+}
+.social-info{
+  
+}
+.social-info ul.d-flex{
+  justify-content: end;
+}
+.social-info ul li a{
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: ;
+  font-family: Roboto, sans-serif ;
+  padding: 0px 6px;
+  transition: .3s ease-in;
+}
+.social-info ul li a:hover{
+  color: var(--brand-color);
+}
+
+#navbar .container .d-flex{
+  align-items: center;
+  padding: 15px 15px;
+}
+.navbar-brand a{
+  color: var(--brand-color);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: ;
+  font-family: Roboto, sans-serif ;
+  text-transform: uppercase;
+  padding: 0px 20px;
+  margin: 0px 0px;
+  transition: .3s ease-in;
+}
+.navbar-brand a:hover{
+   color: var(--text-color);
+}
+.navbar-nav ul.d-flex{
+  justify-content: end;
+}
+.navbar-nav ul li a{
+  color: var(--dark-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: ;
+  font-family: Roboto, sans-serif ;
+  text-transform: capitalize;
+  margin: 0px 15px;
+  padding: 20px 0px;
+  transition: .3s ease-in;
+  position: relative;
+}
+.navbar-nav ul li a.active{
+  color: var(--brand-color);
+}
+.navbar-nav ul li a:hover{
+  color: var(--brand-color);
+}
+.navbar-nav ul li a::after{
+  content: '';
+  width: 50%;
+  height: 5px;
+  background: var(--brand-color);
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  transition: .3s ease-in;
+}
+.navbar-nav ul li a:hover::after{
+  width: 100%;
+  left: 0px;
+}
+
+#header{
+  background: url(../img/hero.jpg) no-repeat;
+  background-size: cover;
+  height: 510px;
+}
+.container.d-flex{
+  align-items: center;
+}
+.header-content{
+  max-width: 60%;
+  padding: 0px 30px;
+}
+.header-content h2{
+  color: var(--brand-color);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: ;
+  font-family: Roboto, sans-serif ;
+  text-transform: uppercase;
+  border-bottom: 3px solid var(--text-color);
+  display: inline-block;
+}
+.header-content h1{
+  color: var(--light-color);
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 96px;
+  font-family: Roboto, sans-serif ;
+  text-transform: capitalize;
+  padding: 20px 0px;
+}
+.header-btn a{
+  color: var(--dark-color);
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Roboto, sans-serif ;
+  text-transform: capitalize;
+  padding: 15px 45px;
+  margin-right: 15px;
+  border: 1px solid var(--light-color);
+  border-radius: 25px;
+  transition: .3s ease-in;
+}
+.header-btn a.active{
+  color: var(--dark-color);
+  background: var(--light-color);
+}
+.header-btn a:hover{
+  background: var(--light-color);
+}
+#about-us{
+
+}
+.header-poster img{
+  border-radius: 20px;
+}
+.features-block{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.features-item{
+  width: 170px;
+  height: 145px;
+  background: #EFF5F9;
+  border-radius: 50%;
+
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.features-item i{
+  color: var(--brand-color);
+  font-size: 48px;
+}
+.mukit-content h3{
+  color: var(--brand-color);
+  font-size: 18px;
+  font-weight: 600;
+  font-family: Roboto, sans-serif ;
+  text-transform: uppercase;
+  border-bottom: 3px solid var(--text-color);
+  display: inline-block;
+}
+.mukit-content p{
+  color: var(--dark-color);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Roboto, sans-serif ;
+  text-transform: capitalize;
+  line-height: 1.3;
+}
+.mukit-content h1{
+  color: var(--dark-color);
+  font-size: 56px;
+  font-weight: 700;
+  font-family: Roboto, sans-serif ;
+  text-transform: capitalize;
+  line-height: 1.3;
+}
+.features-item h4{
+  color: var(--dark-color);
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Roboto, sans-serif ;
+  text-transform: capitalize;
+}
+.features-item h5{
+  color: var(--brand-color);
+  font-size: 14px;
+  font-weight: 700;
+  font-family: Roboto, sans-serif ;
+  text-transform: capitalize;
+}
